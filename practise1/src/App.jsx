@@ -14,7 +14,7 @@ function App() {
     <>
       <div>
         <button onClick={incrementCount}>Increment</button>
-        <h2> Click Count is : {count}</h2>
+        <h2> { `Click Count is : ${count}` }</h2>
       </div>
     </>
   )
