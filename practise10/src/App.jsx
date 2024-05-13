@@ -23,7 +23,15 @@ function App() {
       <button onClick={fetchQuestion}>Start Test</button>
       <ul>
         {allQuestion.map((ques) => (
-          <li key={ques.correct_answer}>{ques.question}</li>
+          <li key={ques.correct_answer}>
+              {ques.question}
+              <ul>
+                <li key={ques.correct_answer}>{ques.correct_answer}</li>
+                <li key={ques.correct_answer}>{ques.incorrect_answers[0]}</li>
+                <li key={ques.correct_answer}>{ques.incorrect_answers[1]}</li>
+                <li key={ques.correct_answer}>{ques.incorrect_answers[2]}</li>
+              </ul>
+          </li>
         ))}
       </ul>
     </div>
